@@ -25,3 +25,5 @@ May Be The Simplest .NETCore+GraphQLSamples.
 
 
 参考：[GraphQL .NET (graphql-dotnet.github.io)](https://graphql-dotnet.github.io/docs/getting-started/installation)
+
+[Introduction to GraphQL | GraphQL](https://graphql.org/learn/)
