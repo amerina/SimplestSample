@@ -10,6 +10,7 @@ namespace SimplestGraphQL.GraphQL.Types
     {
         public ProductType()
         {
+            Name = "Product";
             Field(x => x.Id).Description("The Id of the product.");
             Field(x => x.Name).Description("The name of the product.");
             Field(x => x.Price).Description("The price of the product.");

@@ -4,7 +4,7 @@
 
 
 
-May Be The Simplest .NETCore+CQRS Samples.
+### May Be The Simplest .NETCore+CQRS Samples.
 
 [SimplestSample/SimplestCQRS](https://github.com/amerina/SimplestSample/tree/main/SimplestCQRS)
 
@@ -18,13 +18,26 @@ CQRS（Command Query Responsibility Segregation）的主要思想是将一个系
 
 
 
-May Be The Simplest .NETCore+GraphQLSamples.
+### May Be The Simplest .NETCore+GraphQLSamples.
 
 [SimplestSample/SimplestGraphQL](https://github.com/amerina/SimplestSample/tree/main/SimplestGraphQL)
 
 思想：
 
 GraphQL的主要思想是提供一种更高效、更灵活的方式来进行API查询和数据获取。相比传统的REST API，**GraphQL允许客户端直接定义所需的数据结构和字段，并且可以在一次请求中获取所有需要的数据，避免了多次请求和响应的问题。**同时，GraphQL还支持强类型定义和查询语言，以及可以在服务器端进行数据转换和处理的高度可扩展性。最终，GraphQL可以提高代码开发效率、降低网络负载和提升应用性能。
+
+
+
+GraphQL.Server.Ui.Altair
+
+GraphQL.Server.Ui.Altair可以让你在应用程序中轻松地添加Altair GraphQL客户端，来测试和优化你的GraphQL实现。
+
+要使用GraphQL.Server.Ui.Altair，你只需要在你的Startup.cs中添加一行代码：
+
+```
+//Altair就会在/ui/altair端点上运行
+app.UseGraphQLAltair();
+```
 
 
 

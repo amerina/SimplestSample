@@ -50,12 +50,16 @@ namespace SimplestGraphQL
                 app.UseSwaggerUI();
             }
 
-            app.UseGraphQL<ProductSchema>();
 
             // ∆Ù”√GraphiQLΩÁ√Ê
             app.UseGraphQLGraphiQL(options: new GraphiQLOptions());
 
+            //add altair UI to development only
+            app.UseGraphQLAltair();
+
             app.UseGraphQLPlayground(options: new PlaygroundOptions());
+
+            app.UseGraphQL<ProductSchema>();
 
             app.UseHttpsRedirection();
 

@@ -9,13 +9,27 @@ using System.Security.Cryptography;
 
 namespace SimplestGraphQL.GraphQL.Mutations
 {
+    /// <summary>
+    /// Test:
+    /// 
+    /// </summary>
     public class ProductMutation : ObjectGraphType
     {
         public ProductMutation(ProductDbContext db)
         {
+            /*
+             mutation
+            {
+              createProduct(name: "Hello World!",price:22)
+              {
+                  id
+                  name
+              }
+            }
+             */
+
             // 创建一个新的产品
-            FieldBuilder<ProductType, Product>
-                .Create(typeof(ProductType), "createProduct")
+            Field<ProductType>("createProduct")
                 .Description("Create Product.")
                 .Arguments(new QueryArguments(
                     new QueryArgument<NonNullGraphType<StringGraphType>> { Name = "name" },
@@ -34,8 +48,7 @@ namespace SimplestGraphQL.GraphQL.Mutations
                 });
 
             // 更新一个已有的产品
-            FieldBuilder<ProductType, Product>
-               .Create(typeof(ProductType), "updateProduct")
+            Field<ProductType>("updateProduct")
                .Description("Update Product.")
                .Arguments(new QueryArguments(
                     new QueryArgument<NonNullGraphType<IdGraphType>> { Name = "id" },
@@ -67,8 +80,7 @@ namespace SimplestGraphQL.GraphQL.Mutations
                });
 
             // 删除一个已有的产品
-            FieldBuilder<ProductType, Product>
-               .Create(typeof(ProductType), "deleteProduct")
+            Field<ProductType>("deleteProduct")
                .Description("Update Product.")
                .Arguments(new QueryArguments(
                     new QueryArgument<NonNullGraphType<IdGraphType>> { Name = "id" }
