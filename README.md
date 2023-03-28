@@ -46,3 +46,14 @@ app.UseGraphQLAltair();
 [Explore GraphQL: The API for modern apps.](https://www.graphql.com/)
 
 [Getting Started with GraphQL in ASP.NET Core](https://codewithmukesh.com/blog/graphql-in-aspnet-core/)
+
+
+
+### May Be The Simplest .NETCore Grpc Samples.
+
+
+
+
+
+参考：[grpc-dotnet/examples](https://github.com/grpc/grpc-dotnet/tree/master/examples)
+
