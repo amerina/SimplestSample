@@ -1,6 +1,4 @@
 using GraphQL;
-using GraphQL.Server.Ui.GraphiQL;
-using GraphQL.Server.Ui.Playground;
 using Microsoft.EntityFrameworkCore;
 using SimplestGraphQL.Context;
 using SimplestGraphQL.GraphQL;
@@ -50,14 +48,8 @@ namespace SimplestGraphQL
                 app.UseSwaggerUI();
             }
 
-
-            // ∆Ù”√GraphiQLΩÁ√Ê
-            app.UseGraphQLGraphiQL(options: new GraphiQLOptions());
-
             //add altair UI to development only
             app.UseGraphQLAltair();
-
-            app.UseGraphQLPlayground(options: new PlaygroundOptions());
 
             app.UseGraphQL<ProductSchema>();
 
