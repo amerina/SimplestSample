@@ -12,7 +12,7 @@ namespace SimplestGraphQL
             var builder = WebApplication.CreateBuilder(args);
 
             // Add services to the container.
-            builder.Services.AddDbContext<ProductDbContext>(options => options.UseInMemoryDatabase("Product"));
+            builder.Services.AddDbContext<ProductDbContext>(options => options.UseInMemoryDatabase("ProductDb"));
 
             //使用最新的GraphQL7.3版本
             builder.Services

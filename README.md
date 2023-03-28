@@ -28,7 +28,7 @@ GraphQL的主要思想是提供一种更高效、更灵活的方式来进行API�
 
 
 
-GraphQL.Server.Ui.Altair
+**GraphQL.Server.Ui.Altair**
 
 GraphQL.Server.Ui.Altair可以让你在应用程序中轻松地添加Altair GraphQL客户端，来测试和优化你的GraphQL实现。
 
